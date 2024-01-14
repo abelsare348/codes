@@ -1,0 +1,16 @@
+We can not change the Strings. Strings are immutable object.
+if you want to change it , then you'll have to reassign the content to the another string.
+
+we can delete the string. by adding del keyword infront of string name.
+
+String Operators.
+
++ : join the string
+
+* : multiply the string giving numbers infront of it
+
+Escape characters:
+
+\ : we can use this to add \ ' " in string.
+
+
