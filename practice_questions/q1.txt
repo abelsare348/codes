@@ -1,0 +1,22 @@
+-- Give the name of employee earning more than their managers.
+
+
+ id | name  | salary | managerid
+----+-------+--------+-----------
+  1 | joe   |  70000 |         3
+  2 | Henry |  80000 |         4
+  3 | Sam   |  60000 |
+  4 | Max   |  90000 |
+
+
+basic tip : To solve this type of question where in we have to compare the row of table with another row of same table , then go for self join.
+
+queries:
+1.   create table employee (id int primary key,name varchar,salary int,managerId int);
+
+2.    insert into employee values(1,'joe',70000,3),(2,'Henry',80000,4),(3,'Sam',60000,null),(4,'Max',90000,null);
+
+Final Anwser query :- select e1.name from employee e1 join employee e2 on e1.managerid=e2.id where e1.salary>e2.salary;
+
+
+
