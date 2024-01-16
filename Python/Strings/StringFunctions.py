@@ -9,7 +9,8 @@ print(str2.ljust(10,"*"),str2.rjust(10,"*"))  # just like the pad,lpad,rpad func
 str4="   Aniket   "
 print(str4.lstrip(),str4.strip(),str4.rstrip())  #just like the trim function in sql ltrim, rtrim, trim.
 
-print(str1.count("is",0,len(str2)))
+str6="ABCDCDC"
+print(str6.count("CDC",0,len(str6)))
 
 str3="I Am Aniket"
 print(charade.detect(str3.encode()))  # charade library can detect which encoding format is used.
@@ -29,7 +30,5 @@ str5="I am from Maharashtra. \n I am good boy"
 lst2=str5.splitlines() #split the string on the basis of \n.
 print(lst2)
 
-
-
-
+# There are some methods which are name explanotory. such as isupper,islower,endswith,startswith.
 
